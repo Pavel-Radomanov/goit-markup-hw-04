@@ -56,7 +56,7 @@ overflow: hidden;
 .f-lab{
     display:flex;
     margin: 0 auto;
-    align-items:center;
+    align-items: center;
 }
 
 .roof {
@@ -121,27 +121,39 @@ margin-right: 0;
 }/*?*/
 .site-nav-right-tel{
     
-    margin-left:50px;
+    margin-left:31px;
 }
 .current-link a {
     color: var(--b-color);
 }
-
+.f-lab li{
+align-items: center;
+}
 .site-nav {
     display: flex;
     }
 .site-nav-tel::before{
+display:inline-block;
 content:"";
 width: 10px;
 height: 16px;
 margin-right: 10px;
-/*background-color: ;*/
+
+background-image: url("./images/icons-sprite.svg #icon-smartphone");
+background-size: contain;
+
+}
+
+.site-nav-mail::before{
+display:inline-block;
+content:"";
+width: 10px;
+height: 16px;
+margin-right: 10px;
+background-color: red;
 background-image: url("../images/smartphone.svg");
 background-size: contain;
 }
-
-.site-nav-mail{}
-
 .logo {
     
     
@@ -246,9 +258,21 @@ background-size: contain;
     padding-right:0;
     justify-content:space-between;
 }
-.benefits.item{
+.benefits.item {
+    display:flex;
     margin-left:0;
     margin-right:30px;
+}
+.benefits.item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url("./images/antenna1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 4px;
+    background-color:rgba(245, 244, 250, 1) ;
 }
 .benefits h3 {
     color: #212121;
