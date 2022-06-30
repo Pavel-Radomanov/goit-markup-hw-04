@@ -316,6 +316,9 @@ margin-right: 10px;
     border-radius:4px;
     object-fit: contain;
 }
+.icon-block:last-child{
+    margin-right: 0;
+}
 .picture{
     margin-right: auto;
     margin-left: auto;
@@ -403,7 +406,7 @@ padding-top: 0;
 margin-left: 0;
 margin-right: 30px;
 }
-.work-f:last-child {
+.work-f-item:last-child {
     margin-right: 0;
 }
 
@@ -721,6 +724,7 @@ font-family: 'Roboto';
 }
 .clients-main{
     display: flex;
+    padding: 0;
     }
 .client-list{
     display:flex;
